@@ -1,0 +1,32 @@
+.container{
+ border: 1px solid black;
+}
+#staic{
+    position: static;
+    top: 200px;
+}
+
+#relative{
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+.parent{
+    width: 60vw;
+    height: 40vh;
+    border: 1px solid black;
+}
+#absolute{
+    top: 1%;
+    position: absolute;
+}
+#fixed{
+    position: fixed;
+    top: 500px;
+    left: 0px;
+}
+
+#sticky{
+    position: sticky;
+    top:500px;
+}

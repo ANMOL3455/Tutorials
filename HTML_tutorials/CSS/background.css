@@ -1,0 +1,34 @@
+body{
+    background-image: url(../HTML/walpaper.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.continer{
+    background-color: black;
+    border: px black;
+    height: 400px;
+    width: 200px;
+
+}
+.bg-cotiner{
+    height: 300px;
+    width: 300px;
+    border: px solid black;
+}
+#auto{
+    background-image: url(../HTML/walpaper.png);
+    background-size: auto;
+}
+
+#cover{
+    background-image: url(../HTML/walpaper.png);
+    background-size: cover; 
+}
+
+#cont{
+    background-image: url(../HTML/walpaper.png);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+}

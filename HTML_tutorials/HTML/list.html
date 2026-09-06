@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson: Lists in HTML</title>
+</head>
+<body>
+
+    <h1>Lesson: Lists in HTML</h1>
+
+    <p>Today, we are going to learn about the three types of lists in HTML.</p>
+
+    <hr>
+
+    <h2>Step 1: Ordered List (ol)</h2>
+
+    <p>Ordered lists are used when order or priority matters.</p>
+
+    <p><b>We are doing this:</b></p>
+    <pre>
+&lt;ol type="i"&gt;
+    &lt;li&gt;mango&lt;/li&gt;
+    &lt;li&gt;banana&lt;/li&gt;
+&lt;/ol&gt;
+    </pre>
+
+    <p><b>Result:</b></p>
+    <p><b>Serial list (roman numbers):</b></p>
+    <ol type="i">
+        <li>mango</li>
+        <li>banana</li>
+        <li>peach</li>
+        <li>litchi</li>
+        <li>papaya</li>
+    </ol>
+
+    <p><b>Reversed list:</b></p>
+    <ol type="A" reversed>
+        <li>mango</li>
+        <li>banana</li>
+        <li>peach</li>
+        <li>litchi</li>
+        <li>papaya</li>
+    </ol>
+
+    <p><b>Custom start list:</b></p>
+    <ol type="1" start="10">
+        <li>mango</li>
+        <li>banana</li>
+        <li>peach</li>
+        <li>litchi</li>
+        <li>papaya</li>
+    </ol>
+
+    <hr>
+
+    <h2>Step 2: Unordered List (ul)</h2>
+
+    <p>Unordered lists are used when order does not matter. They show bullet points.</p>
+
+    <p><b>We are doing this:</b></p>
+    <pre>
+&lt;ul&gt;
+    &lt;li&gt;item&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+
+    <p><b>Result:</b></p>
+    <ul>
+        <li>hari</li>
+        <li>saili</li>
+        <li>gairi</li>
+        <li>sudip</li>
+        <li>manish</li>
+    </ul>
+
+    <hr>
+
+    <h2>Step 3: Description List (dl)</h2>
+
+    <p>Description lists are used to explain terms.</p>
+
+    <ul>
+        <li><b>&lt;dt&gt;</b> → term</li>
+        <li><b>&lt;dd&gt;</b> → description</li>
+    </ul>
+
+    <p><b>Result:</b></p>
+    <dl>
+        <dt>int</dt>
+        <dd>whole numbers</dd>
+
+        <dt>string</dt>
+        <dd>collection of characters</dd>
+
+        <dt>float</dt>
+        <dd>decimal numbers</dd>
+    </dl>
+
+    <hr>
+
+    <h2>Step 4: Nested List</h2>
+
+    <p>We can also create lists inside another list. This is called a nested list.</p>
+
+    <p><b>Result:</b></p>
+    <ol>
+        <li>Subjects
+            <ol>
+                <li>maths</li>
+                <li>science</li>
+                <li>literature</li>
+            </ol>
+        </li>
+
+        <li>Programming Languages
+            <ol>
+                <li>C</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Ruby</li>
+                <li>Swift</li>
+            </ol>
+        </li>
+
+        <li>Computer Science Concepts
+            <ol>
+                <li>data structures</li>
+                <li>algorithm</li>
+                <li>OS</li>
+                <li>database management</li>
+                <li>networking</li>
+            </ol>
+        </li>
+
+        <li>Web Tech
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ol>
+        </li>
+    </ol>
+
+    <hr>
+
+    <h2>Final Notes</h2>
+
+    <ul>
+        <li>Use <b>&lt;ol&gt;</b> for ordered lists</li>
+        <li>Use <b>&lt;ul&gt;</b> for unordered lists</li>
+        <li>Use <b>&lt;dl&gt;</b> for descriptions</li>
+        <li>Always place nested lists inside <b>&lt;li&gt;</b></li>
+        <li><b>&lt;caption&gt;</b> is not used in lists (only for tables)</li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JOB APPLICATION FORM </title>
+</head>
+
+<body>
+
+    <form>
+        <p align="center"> <b>Please fill the form for the job application</b></p>
+        <hr>
+        <form action="" method="">
+        <fieldset>
+            <legend>PERSONAL INFORMATION</legend>
+            <label for="username"> NAME : </label>
+            <input type="text" name="" id="username" placeholder="eg: Anmol Sapkota">
+            <br>
+            <br>
+            <label for="pwd"> EMAIL : </label>
+            <input type="email" id="pwd" placeholder="anmol@gmail.com" required>
+        
+            <br>
+            <br>
+            <label for="pwd"> CONTACT : </label>
+            <input type="tel" id="pwd" placeholder="9818929324" minlength="10" maxlength="10">
+            <br>
+            <br>
+            <label for="pwd"> ADDRESS : </label>
+            <input type="text" id="pwd" placeholder="ghattikulo" required>
+            <p> please select your gender: </p>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </fieldset>
+            <br><br>
+            <label for="bio"> COVER LETTER: </label>
+            <br>
+            <textarea rows="10" cols="50" id="bio" placeholder="i am a IT guy"></textarea>
+            <br>
+            <br>
+            <p> Please select your skills: </p>
+            <input type="checkbox" name="skill" id="pyth" value="python">
+            <label for="pyth">Python</label>
+            <br>
+            <input type="checkbox" name="skill" id="C" value="C">
+            <label for="C">C</label>
+            <br>
+            <input type="checkbox" name="skill" id="cpp" value="c++">
+            <label for="cpp">C++</label>
+            <br>
+            <input type="checkbox" name="skill" id="nt" value="networking">
+            <label for="nt">Networking</label>
+            <br>
+            <input type="checkbox" name="skill" id="dt" value="database">
+            <label for="dt">Database</label>
+            <BR>
+            <input type="checkbox" name="skill" id="cpp" value="java">
+            <label for="cpp">Java</label>
+            <br>
+            <input type="checkbox" name="skill" id="nt" value="golang">
+            <label for="nt">Golang</label>
+            <br>
+            <input type="checkbox" name="skill" id="dt" value="rust">
+            <label for="dt">Rust</label>
+            <BR>
+            <p> DISTRICT : </p>
+            <select name="district" id="district">
+
+                <option value="">-- Select District --</option>
+                <optgroup label="Koshi Province">
+                    <option>Taplejung</option>
+                    <option>Panchthar</option>
+                    <option>Ilam</option>
+                    <option>Jhapa</option>
+                    <option>Morang</option>
+                    <option>Sunsari</option>
+                    <option>Dhankuta</option>
+                    <option>Terhathum</option>
+                    <option>Sankhuwasabha</option>
+                    <option>Bhojpur</option>
+                    <option>Solukhumbu</option>
+                    <option>Okhaldhunga</option>
+                    <option>Khotang</option>
+                    <option>Udayapur</option>
+                </optgroup>
+
+                <!-- Madhesh Province -->
+                <optgroup label="Madhesh Province">
+                    <option>Saptari</option>
+                    <option>Siraha</option>
+                    <option>Dhanusha</option>
+                    <option>Mahottari</option>
+                    <option>Sarlahi</option>
+                    <option>Rautahat</option>
+                    <option>Bara</option>
+                    <option>Parsa</option>
+                </optgroup>
+
+                <!-- Bagmati Province -->
+                <optgroup label="Bagmati Province">
+                    <option>Dolakha</option>
+                    <option>Sindhupalchok</option>
+                    <option>Rasuwa</option>
+                    <option>Dhading</option>
+                    <option>Nuwakot</option>
+                    <option>Kathmandu</option>
+                    <option>Bhaktapur</option>
+                    <option>Lalitpur</option>
+                    <option>Kavrepalanchok</option>
+                    <option>Ramechhap</option>
+                    <option>Sindhuli</option>
+                    <option>Makwanpur</option>
+                    <option>Chitwan</option>
+                </optgroup>
+                <optgroup label="Gandaki Province">
+                    <option>Gorkha</option>
+                    <option>Lamjung</option>
+                    <option>Tanahun</option>
+                    <option>Syangja</option>
+                    <option>Kaski</option>
+                    <option>Manang</option>
+                    <option>Mustang</option>
+                    <option>Parbat</option>
+                    <option>Baglung</option>
+                    <option>Myagdi</option>
+                    <option>Nawalpur</option>
+                </optgroup>
+                <optgroup label="Lumbini Province">
+                    <option>Kapilvastu</option>
+                    <option>Rupandehi</option>
+                    <option>Nawalparasi West</option>
+                    <option>Palpa</option>
+                    <option>Arghakhanchi</option>
+                    <option>Gulmi</option>
+                    <option>Pyuthan</option>
+                    <option>Rolpa</option>
+                    <option>Eastern Rukum</option>
+                    <option>Banke</option>
+                    <option>Bardiya</option>
+                    <option>Dang</option>
+                </optgroup>
+                <optgroup label="Karnali Province">
+                    <option>Dolpa</option>
+                    <option>Mugu</option>
+                    <option>Humla</option>
+                    <option>Jumla</option>
+                    <option>Kalikot</option>
+                    <option>Dailekh</option>
+                    <option>Jajarkot</option>
+                    <option>Western Rukum</option>
+                    <option>Salyan</option>
+                    <option>Surkhet</option>
+                </optgroup>
+                <optgroup label="Sudurpashchim Province">
+                    <option>Bajura</option>
+                    <option>Bajhang</option>
+                    <option>Darchula</option>
+                    <option>Baitadi</option>
+                    <option>Dadeldhura</option>
+                    <option>Doti</option>
+                    <option>Achham</option>
+                    <option>Kailali</option>
+                    <option>Kanchanpur</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            <label for="company">Worked Company Name : </label>
+            <input type="text" id="company" name="company" placeholder="Enter company name">
+
+            <br><br>
+
+            <!-- Position -->
+            <label for="position">Job Position</label>
+            <input type="text" id="position" name="position" placeholder="Enter your position">
+            <br><br>
+            <label for="experience">Work Experience</label>
+            <select name="experience" id="experience">
+                <option value="">-- Select Experience --</option>
+                <option>Fresher</option>
+                <option>Less than 1 Year</option>
+                <option>1 Year</option>
+                <option>2 Years</option>
+                <option>3 Years</option>
+                <option>4 Years</option>
+                <option>5 Years</option>
+                <option>6-10 Years</option>
+                <option>10+ Years</option>
+            </select>
+            <br>
+            <br>
+            <label for="experience">Education</label>
+            <select name="experience" id="experience">
+                <option value="">-- Select Education --</option>
+                <option value="SEE / SLC">SEE / SLC</option>
+                <option value="+2 / Intermediate">+2 / Intermediate</option>
+                <option value="Diploma">Diploma</option>
+                <option value="Bachelor">Bachelor</option>
+                <option value="Bachelor Running">Bachelor Running</option>
+                <option value="Master">Master</option>
+                <option value="Master Running">Master Running</option>
+                <option value="PhD / Doctorate">PhD / Doctorate</option>
+                <option value="Professional Certification">Professional Certification</option>
+            </select>
+            <br>
+            <br>
+            <p> Submit your passport size photo :</p>
+            <input type="file" accept=".png">
+            <p> Submit your CV here :</p>
+            <input type="file" accept=".pdf">
+            <hr>
+            <center><button> SUBMIT </button></center>
+
+        </form>
+
+
+
+
+</body>
+
+</html>

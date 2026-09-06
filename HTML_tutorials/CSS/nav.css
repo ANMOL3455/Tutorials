@@ -1,0 +1,49 @@
+.logo{
+    color: wheat;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+a{
+    color: wheat;
+    text-decoration: none;
+}
+.links{
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    font-family: monospace;
+    font-size: large;
+}
+
+.navbar{
+    display: flex;
+    background-color: blueviolet;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    height: 60px;
+}
+li:hover{
+text-decoration: 1px wavy solid;
+    font-weight: 700px;
+}
+.sublinks{
+    list-style-type: none;
+    gap: 50px;
+    font-family: monospace;
+    font-size: large;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    display: none;
+    background: green;
+}
+li:hover .sublinks{
+        display: block;
+}
+
+

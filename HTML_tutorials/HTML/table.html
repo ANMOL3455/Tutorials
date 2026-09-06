@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson: Tables in HTML</title>
+</head>
+
+<body>
+
+    <h1>Lesson: Tables in HTML</h1>
+
+    <p>Today, we are going to learn how to create tables in HTML.</p>
+
+    <hr>
+    <h2>Step 1: Basic Table</h2>
+
+    <p>First, we create a simple table using the <b>&lt;table&gt;</b> tag.</p>
+
+    <p><b>We are doing this:</b></p>
+    <pre>
+&lt;table border="2px"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;SN&lt;/th&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;CLASS&lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+    </pre>
+
+    <p><b>Explanation:</b></p>
+    <ul>
+        <li><b>&lt;table&gt;</b> → creates the table</li>
+        <li><b>&lt;tr&gt;</b> → table row</li>
+        <li><b>&lt;th&gt;</b> → table heading</li>
+        <li><b>&lt;td&gt;</b> → table data</li>
+    </ul>
+
+    <p><b>Result:</b></p>
+    <table border="2px">
+        <caption>Class Details</caption>
+        <tr>
+            <th>SN</th>
+            <th>NAME</th>
+            <th>CLASS</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>anmol</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>manish</td>
+            <td>13</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Step 2: Table with More Data</h2>
+
+    <p>Now, we create a bigger table with more columns.</p>
+
+    <p><b>We are adding:</b> name, post, address, and salary.</p>
+
+    <p><b>Result:</b></p>
+    <table border="2px">
+        <caption>Employee Details</caption>
+        <tr>
+            <th>SN</th>
+            <th>NAME</th>
+            <th>POST</th>
+            <th>ADDRESS</th>
+            <th>SALARY</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>anmol</td>
+            <td>security</td>
+            <td>kathmandu</td>
+            <td>230000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>manish</td>
+            <td>developer</td>
+            <td>lolang</td>
+            <td>230000</td>
+        </tr>
+    </table>
+
+    <p><b>We can also use &lt;tfoot&gt; for summary:</b></p>
+    <table border="2px">
+        <tr>
+            <th>Item</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Salary</td>
+            <td>230000</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="2" align="center">Average Salary: 55000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <h2>Step 3: Rowspan and Colspan</h2>
+
+    <p>Now, we learn how to merge rows and columns.</p>
+
+    <ul>
+        <li><b>rowspan</b> → merges rows</li>
+        <li><b>colspan</b> → merges columns</li>
+    </ul>
+
+    <p><b>Result:</b></p>
+    <table border="2px">
+        <tr>
+            <th>Product</th>
+            <th>Flavors</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Milk</td>
+            <td>Almond</td>
+        </tr>
+        <tr>
+            <td>Mango</td>
+        </tr>
+        <tr>
+            <td>Guava</td>
+        </tr>
+        <tr>
+            <td>Chocolate</td>
+            <td>Banana</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="2" align="center">These are exclusive flavors</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <h2>Step 4: Complex Table</h2>
+
+    <p>Finally, we create a more complex table using both rowspan and colspan.</p>
+
+    <p><b>Result:</b></p>
+    <table border="2px">
+        <caption>Students Details</caption>
+        <tr>
+            <th rowspan="2">Heading</th>
+            <th>Students</th>
+            <th colspan="3">Details</th>
+        </tr>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>DEPARTMENT</th>
+            <th>ROLL NO</th>
+        </tr>
+        <tr>
+            <td rowspan="4">Students</td>
+            <td>1</td>
+            <td>victor</td>
+            <td>science</td>
+            <td>1234</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>williams</td>
+            <td>chemistry</td>
+            <td>12345</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>harry</td>
+            <td>physics</td>
+            <td>123</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>rick</td>
+            <td>cs</td>
+            <td>12</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Final Notes</h2>
+
+    <ul>
+        <li>Use <b>&lt;th&gt;</b> for headings and <b>&lt;td&gt;</b> for data</li>
+        <li>Use <b>rowspan</b> to merge rows</li>
+        <li>Use <b>colspan</b> to merge columns</li>
+        <li>Use <b>&lt;caption&gt;</b> to give your table a title</li>
+    </ul>
+
+</body>
+
+</html>

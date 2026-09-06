@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\CSS\box_padding.css">
+    <title> Box padding</title>
+</head>
+
+<body>
+    <h4>Box Model</h4>
+    <hr>
+    <p> padding</p>
+    <div class="pading">
+        <p>Box -1</p>
+    </div>
+    <br>
+    <!-- if units are given in a same css attribute then its is ordered as top, right, bottom and left-->
+    <div class="box1" style="padding:50px 2px 3px 40px;">
+        <p>box -a</p>
+    </div><br>
+    <div class="box1" style="padding:50px 40px 0px 0px;">
+        <p>box -a</p>
+    </div><br>
+    <div class="box1" style="padding:0px 0px 0px 40px;">
+        <p>box -a</p>
+    </div><br>
+    <hr>
+    <h4> Margin </h4>
+    <!-- it is the gap between two elements-->
+    <!--margin is a space between the elements. syntax:
+    margin-top: unit;
+    margin-right: unit;
+    margin-botom: unit
+    short-hand: unit;-->
+    <div class="margin" style="margin-bottom: 50px ;">
+        <p>Box -2</p>
+    </div>
+    <div class="margin">
+        <p>Box -3</p>
+    </div>
+    <hr>
+    <h4> Outline </h4>
+    <!-- it is a line ooutside the border
+     syntax: size style color
+     outline-offset: unit for the space between outline and the border-->
+    <p id="outline"> Border Outline</p>
+    <hr>
+    <p> For extra knowledge : <a href="https://www.w3schools.com/css/css_boxmodel.asp"> Click here</a></p>
+
+
+</body>
+
+</html>

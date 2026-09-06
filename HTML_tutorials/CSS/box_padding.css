@@ -1,0 +1,27 @@
+.pading {
+    padding: 2px;
+    height: 200px;
+    width: 400px;
+    border: 1px solid black;
+}
+
+.box1 {
+    height: 100px;
+    width: 150px;
+    border: 1px solid black;
+}
+
+.margin {
+    height: 100px;
+    width: 150px;
+    border: 1px solid black;
+}
+
+#outline {
+    border: 1px solid black;
+    height: 20px;
+    width: 200px;
+    margin-left: 100px;
+    outline: 1px dashed red;
+    outline-offset: 5px;
+}

@@ -1,0 +1,85 @@
+.container{
+    border: 1px solid black;
+    height: 200px;
+    width: 800px;
+    display: flex;
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.container1{
+    height: 400px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box{
+    height: 50px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+/* Order Property */
+
+.order1{
+    order: 5;
+}
+
+.order2{
+    order: 4;
+}
+
+.order3{
+    order: 3;
+}
+
+.order4{
+    order: 2;
+}
+
+.order5{
+    order: 1;
+}
+
+/* Flex Shrink */
+
+.container2{
+    width: 300px;
+    height: 150px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.shrink1{
+    flex-shrink: 1;
+}
+
+.shrink2{
+    flex-shrink: 2;
+}
+
+.shrink3{
+    flex-shrink: 3;
+}
+
+.shrink4{
+    flex-shrink: 4;
+}
+
+.shrink5{
+    flex-shrink: 5;
+}
+.container5{
+    width: 1000px;
+    height: 150px;
+    border: 1px solid black;
+    display: flex;
+
+}

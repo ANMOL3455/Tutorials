@@ -1,0 +1,41 @@
+th, td{
+    border-bottom: 1px solid black;
+    /* border-collapse: collapse; */
+    padding: 5px;
+}
+table{
+    width: 400px;
+    height: 100px;
+}
+td{
+ text-align: centre;
+}
+th{
+    /* background-color: gray;
+    color: white; */
+    font-weight: 700px;
+}
+
+
+
+.table2,.table2h, .table2d{
+ border: 1px solid rgba(190, 185, 28, 0.093);
+ border-collapse: collapse;
+ padding : 5px;
+}
+.table2{
+    width: 700px;
+    height: 100px;
+}
+.table2d{
+ text-align: centre;
+ background-color: rgba(139, 197, 178, 0.696);
+ color: black;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.table2h{
+    background-color: rgb(88, 63, 151);
+    color: white;
+    font-weight: 700px;
+}

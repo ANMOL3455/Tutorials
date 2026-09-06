@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .one {
+            background-color: gray;
+        }
+
+        span {
+            background-color: red;
+        }
+
+        .inline {
+            background-color: gray;
+            display: inline;
+        }
+
+        .inline_block {
+            display: inline-block;
+            background-color: gray;
+            width: 200px;
+            height: 50px;
+        }
+
+        .block {
+            display: block;
+            background-color: gray;
+        }
+
+        .none {
+            display: none;
+            background-color: gray;
+        }
+
+        .box {
+            border: 2px solid green;
+            height: 100px;
+            width: 100px;
+            border-radius: 20px;
+        }
+
+        .he {
+            font-size: 100px;
+        }
+        .container{
+            background-color: green;
+            border: 2px solid red;
+            height: 400px;
+            width: 650px;
+            border-radius: 20px;
+        }
+        .me{
+            display: inline-block;
+            border: 1px solid black;
+            height: 100px;
+            width: 200px;
+        }
+
+    </style>
+    <title>Display tag</title>
+</head>
+
+<body>
+    <h4> about display tag</h4>
+
+    <!-- Block-level elements: Start on a new line and take full width (e.g., <div>, <p>, <h1>) -->
+    <!-- Inline elements: Stay on the same line and take only needed width (e.g., <span>, <a>, <strong>) -->
+    <p class="one">
+        <span> class </span>
+        <span> class </span>
+        <span> class </span>
+    </p>
+    <hr>
+    <h4>Inline</h4>
+    <p class="inline">
+        <span>text 1</span>
+        <span>text 2</span>
+        <span> text 3 </span>
+    </p>
+    <hr>
+    <h4> Inline-Block</h4>
+    <p class="inline_block">
+        <span>text 1</span>
+        <span>text 2</span>
+        <span> text 3 </span>
+    </p>
+    <hr>
+    <h4>Block</h4>
+    <p class="block">
+        <span>text 1</span>
+        <span>text 2</span>
+        <span> text 3 </span>
+    </p>
+    <h4>None</h4>
+    <p class="none">
+        <span>text 1</span>
+        <span>text 2</span>
+        <span> text 3 </span>
+    </p>
+    <hr>
+    <h4> Border radius </h4>
+    <div class="box">
+        <p align="center" style="margin-top: -35px;" class="he"> . </p>
+    </div>
+
+
+
+    <hr>
+    <div class="container">
+        <div class="me"></div>
+        <div class="me"></div>
+        <div class="me"></div>
+    </div>
+</body>
+
+</html>

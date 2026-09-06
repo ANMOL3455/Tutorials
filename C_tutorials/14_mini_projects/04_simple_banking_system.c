@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(void){double balance=0,amount;int c;while(1){puts("1 Deposit 2 Withdraw 3 Balance 0 Exit");if(scanf("%d",&c)!=1)return 1;if(c==1){scanf("%lf",&amount);if(amount>0)balance+=amount;else puts("Invalid amount.");}else if(c==2){scanf("%lf",&amount);if(amount<=0)puts("Invalid amount.");else if(amount>balance)puts("Insufficient balance.");else balance-=amount;}else if(c==3)printf("Balance=%.2f\n",balance);else if(c==0)break;else puts("Invalid choice.");}return 0;}

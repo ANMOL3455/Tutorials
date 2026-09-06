@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Making Forms </title>
+</head>
+
+<body align="center">
+    <h2> we are making forms today </h2>
+    <hr>
+    <form action="" method="">
+        <label for="username"> USERNAME : </label>  <!-- these are the captions for the input fields for the user to know about what to enter where-->
+        <input type="text" name="" id="username" placeholder="eg: Anmol Sapkota">  <!-- input tags are used to create the input fields-->
+        <br>
+        <br>
+        <label for="pwd"> PASSWORD : </label>
+        <input type="password" id="pwd" placeholder=" mister@123" required>  <!-- placeholders are used to give an hint whar can be entered where-->
+        <br><br>
+        <label for="bio"> BIO: </label>
+        <br>
+        <textarea rows="10" cols="50" id="bio" placeholder="lucifer is always silent.."></textarea>
+        <br>
+        <br>
+        <label> Email: </label>
+        <input type="email" placeholder="sapkota@gmail.com" required>
+        <br>
+        <br>
+        <label> AGE: </label>
+    <input type="number" placeholder="34">
+        <br><br>
+        <label>DOB : </label>
+        <input type="date">
+        <!-- if datetime was used-->
+        <br><br>
+        <label>DOB : </label>
+        <input type="datetime" placeholder="02/03/2026">
+        <br><br>
+        <!-- if datetime local is used-->
+        <label>DOB : </label>
+        <input type="datetime-local">
+        <p> please select your gender: </p>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">female</label>
+        <br>
+        <p> Please select your skills: </p>
+        <input type="checkbox" name="skill" id="pyth" value="python">
+        <label for="pyth">Python</label>
+        <br>
+        <input type="checkbox" name="skill" id="C" value="C">
+        <label for="C">C</label>
+        <br>
+        <input type="checkbox" name="skill" id="cpp" value="c++">
+        <label for="cpp">C++</label>
+        <br>
+        <input type="checkbox" name="skill" id="nt" value="networking">
+        <label for="nt">Networking</label>
+        <br>
+        <input type="checkbox" name="skill" id="dt" value="database">
+        <label for="dt">Database</label>
+        <BR>
+        <label>COUNTRY</label>
+        <SELECT>
+            <optgroup label="section 1">
+            <OPTION> NEPAL</OPTION>
+            <OPTION> INDIA</OPTION>
+            </optgroup>
+            <optgroup label="section 2">
+            <OPTION> AUSTRALIA</OPTION>
+            <OPTION> GERMANY</OPTION>
+            <OPTION> CHINA</OPTION>
+            </optgroup>
+        </SELECT>
+
+  <br>
+  <label> skill level </label>
+  <input type="range" name="volume" id="volume" max="23" min="0">
+
+        <hr>
+        <button> SUBMIT </button>
+    </form>
+
+</html>

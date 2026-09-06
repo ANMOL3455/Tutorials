@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> internal css</title>
+    <style>
+        #first {
+            background-color: red;
+            color: wheat;
+        }
+
+        #alignment1 {
+            text-align: justify;
+        }
+
+        #va {
+            /* possible values sub,sup, middle,top,bottom*/
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="first">Various tweaks uding CSS : </p>
+    <h4>Text alignment</h4>
+    <ol>
+        <li>Horizontal alignment</li>
+        <!-- possible values are: center,right,left-->
+        <p id="alignment1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque esse odio eius nam, est
+            soluta eos sapiente asperiores animi quisquam.</p>
+        <li>Vertical alignment</li>
+        <p>alignment : <span id="va">c</span></p>
+    </ol>
+    <hr>
+    <h4>Text decoration</h4>
+    <p>possible values line-[underline,overline,line-through]
+        <br> style-[solid,dashed,dotted,double,wavy]
+        <br> Thikness-[unit eg : 1px, 4px]
+    </p>
+    <ol>
+        <li style="text-decoration:underline wavy red 1px">Dog</li>
+        <li style="text-decoration:underline red 1px">Cat</li>
+        <br>
+        <li style="text-decoration:overline green 1px">Tiger</li>
+        <li style="text-decoration:line-through double  1px">Zebra</li>
+        <li style="text-decoration:underline dotted red 1px">LIOn</li>
+    </ol>
+    <hr>
+    <h4>Text Transformation</h4>
+    <ol>
+        <li style="text-transform: lowercase;">SMALL</li>
+        <li style="text-transform: capitalize;">big</li>
+        <li style="text-transform: uppercase;">huge</li>
+        <li style="text-shadow: 2px 2px red;">shadow</li>
+        <li style="text-shadow: 0px 0px 4px red;">The Elements</li>
+         <li style="color:white; text-shadow: 0px 0px 4px red,0px 0px 5px black;">COBWEB</li>
+    </ol>
+     <hr>
+
+</body>
+
+</html>

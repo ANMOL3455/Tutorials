@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png">
+    <title> hwb </title>
+    <style>
+        .outer {
+            font-size: 40px;
+            width: 400px;
+            height: 400px;
+            border: 3px solid black;
+
+        }
+
+        .inner {
+            width: 200px;
+            height: 200px;
+            border: 2px dashed red;
+        }
+    .outer1{
+            width: 50vw; /* this means 50% of width i can see*/
+            height: 50vh; /* this means 50% of height i can see*/
+            border:3px solid black; 
+    }
+    .inner1{
+        width: 25vw;
+        height: 25vh;
+        border:3px dotted red; 
+    }
+    </style>
+</head>
+
+<body align="center">
+    <h4> all about height width and border </h4>
+    <hr>
+    <div class="outer">
+        <p> this is outer division</p>
+
+        <!-- child divisions are relative unit that follows the properties of parrent division-->
+
+        <!-- units can be mm, cm, inch and px this all re relative units-->
+
+        <!-- absolute units can be %, rem , em, vw, vh etc-->
+        <div class="inner">
+            <p style="font-size: 1.5rem;"> rem unit</p>
+            <!-- the rem relates with the inner divisions and it fits there -->
+            <p style="font-size: 0.5em;">em unit</p>
+            <!--Relative to the font-size of the element (0.5em means 1/2 times the size of the current parent font)-->
+            <p style="font-size: 0.5em;">vw unit</p>
+
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="outer1"> 
+        <div class="inner1">
+            <p> use of vh and vw</p>
+        </div>
+    </div>
+    <hr>
+
+    <p>for further knowledge<a href="https://www.w3schools.com/csSref/css_units.php" target="blank"> click here</a>
+    </p>
+
+</body>
+
+</html>

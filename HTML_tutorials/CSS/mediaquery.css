@@ -1,0 +1,14 @@
+.container{
+    width: ;
+}
+@media (max-width: 600px){
+    .container{
+      background-color: red;
+    }
+}
+
+@media (max-width: 900px){
+    .container{
+        background-color: aqua;
+    }
+}
