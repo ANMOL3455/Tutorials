@@ -1,0 +1,1800 @@
+============================================================
+                    JAVA PROGRAMMING
+                    INTRODUCTION
+============================================================
+
+
+1. WHAT IS JAVA?
+----------------
+
+Java is a high-level, general-purpose, object-oriented
+programming language.
+
+Java was originally developed at Sun Microsystems. It was
+designed by James Gosling and his team and was first released
+in 1995.
+
+Java is widely used for developing applications, backend
+systems, enterprise software, desktop applications, Android
+applications, web applications, and many other types of
+software.
+
+One of the main ideas behind Java is:
+
+        "Write Once, Run Anywhere"
+
+This means Java programs can run on different operating
+systems through the Java Virtual Machine (JVM).
+
+
+------------------------------------------------------------
+2. WHY IS JAVA CALLED PLATFORM INDEPENDENT?
+------------------------------------------------------------
+
+Normally, programs compiled for one operating system may not
+directly run on another operating system.
+
+Java works differently.
+
+Java source code is first compiled into BYTECODE.
+
+        Java Source Code
+               |
+               v
+          Java Compiler
+             javac
+               |
+               v
+          Bytecode
+           .class
+               |
+               v
+             JVM
+               |
+       -----------------
+       |       |       |
+     Linux  Windows  macOS
+
+The JVM interprets or compiles the bytecode for the specific
+operating system.
+
+Therefore, the same Java bytecode can run on different
+platforms when a suitable JVM is available.
+
+
+------------------------------------------------------------
+3. JAVA SOURCE CODE
+------------------------------------------------------------
+
+Java source code is written in files ending with:
+
+        .java
+
+Example:
+
+        Hello.java
+
+The Java compiler converts the source code into bytecode.
+
+Command:
+
+        javac Hello.java
+
+This normally produces:
+
+        Hello.class
+
+The .class file contains Java bytecode.
+
+
+------------------------------------------------------------
+4. JDK, JRE AND JVM
+------------------------------------------------------------
+
+There are three important terms when learning Java:
+
+JVM
+JRE
+JDK
+
+
+JVM — JAVA VIRTUAL MACHINE
+--------------------------
+
+JVM is responsible for executing Java bytecode.
+
+It provides the environment required to run Java programs.
+
+Main responsibilities include:
+
+- Loading classes
+- Verifying bytecode
+- Executing bytecode
+- Managing memory
+- Working with garbage collection
+- Providing runtime support
+
+
+JRE — JAVA RUNTIME ENVIRONMENT
+------------------------------
+
+JRE provides the environment required to run Java
+applications.
+
+It contains:
+
+        JVM + Java runtime libraries
+
+
+JDK — JAVA DEVELOPMENT KIT
+---------------------------
+
+JDK is used for developing Java applications.
+
+It contains tools required to write, compile, debug and run
+Java programs.
+
+Important JDK tools include:
+
+        javac
+        java
+        jar
+        javadoc
+
+
+Relationship:
+
+        JDK
+         |
+         v
+        JRE
+         |
+         v
+        JVM
+
+
+------------------------------------------------------------
+5. FEATURES OF JAVA
+------------------------------------------------------------
+
+Important features of Java include:
+
+
+1. SIMPLE
+----------
+
+Java was designed to be easier to use than some older
+languages.
+
+It removes or simplifies several complicated features found
+in languages such as C++.
+
+
+2. OBJECT-ORIENTED
+-------------------
+
+Java is heavily based on Object-Oriented Programming (OOP).
+
+Important OOP concepts include:
+
+- Class
+- Object
+- Encapsulation
+- Inheritance
+- Polymorphism
+- Abstraction
+
+
+3. PLATFORM INDEPENDENT
+-----------------------
+
+Java bytecode can run on different operating systems through
+the JVM.
+
+
+4. SECURE
+---------
+
+Java provides several features that help developers create
+secure applications, including:
+
+- Strong type checking
+- Bytecode verification
+- Access control
+- Automatic memory management
+
+
+5. ROBUST
+---------
+
+Java provides features such as:
+
+- Strong type checking
+- Exception handling
+- Automatic memory management
+- Garbage collection
+
+
+6. MULTITHREADED
+----------------
+
+Java supports executing multiple threads of execution.
+
+This is useful for:
+
+- Servers
+- Background tasks
+- Network applications
+- Concurrent applications
+
+
+7. PORTABLE
+-----------
+
+Java programs can be moved between supported platforms with
+minimal changes.
+
+
+8. HIGH PERFORMANCE
+-------------------
+
+Java uses techniques such as Just-In-Time (JIT) compilation
+to improve execution performance.
+
+
+9. DISTRIBUTED
+--------------
+
+Java provides APIs and technologies useful for developing
+distributed and network-based applications.
+
+
+10. DYNAMIC
+-----------
+
+Java can load classes and libraries during runtime.
+
+
+------------------------------------------------------------
+6. JAVA PROGRAM STRUCTURE
+------------------------------------------------------------
+
+A basic Java program generally contains:
+
+- Class
+- main() method
+- Statements
+- Variables
+- Methods
+
+Example structure:
+
+        public class Example {
+
+            public static void main(String[] args) {
+
+                System.out.println("Hello Java");
+
+            }
+        }
+
+
+------------------------------------------------------------
+7. MAIN METHOD
+------------------------------------------------------------
+
+The main() method is the normal entry point of a standalone
+Java application.
+
+Common form:
+
+        public static void main(String[] args)
+
+
+Meaning:
+
+public
+------
+The method can be accessed from outside the class.
+
+static
+------
+The method belongs to the class rather than a particular
+object.
+
+void
+----
+The method does not return a value.
+
+main
+----
+The name recognized as the application entry point.
+
+String[]
+--------
+An array of String objects.
+
+args
+----
+The parameter name used to receive command-line arguments.
+
+
+------------------------------------------------------------
+8. JAVA IS CASE-SENSITIVE
+------------------------------------------------------------
+
+Java is case-sensitive.
+
+For example:
+
+        age
+        Age
+        AGE
+
+are different identifiers.
+
+
+------------------------------------------------------------
+9. IDENTIFIERS
+------------------------------------------------------------
+
+Identifiers are names given to programming elements.
+
+Examples:
+
+        student
+        age
+        calculateSalary
+        Student
+        totalMarks
+
+
+Identifiers can be used for:
+
+- Variables
+- Methods
+- Classes
+- Interfaces
+- Packages
+
+
+General rules:
+
+- Cannot normally begin with a number.
+- Cannot contain spaces.
+- Cannot be a Java keyword.
+- Java is case-sensitive.
+- Underscore and dollar sign are allowed, although naming
+  conventions should be followed.
+
+
+------------------------------------------------------------
+10. JAVA KEYWORDS
+------------------------------------------------------------
+
+Keywords are reserved words that have a predefined meaning
+in the Java language.
+
+They cannot normally be used as identifiers such as variable
+or class names.
+
+
+Important Java keywords include:
+
+
+CLASS AND OBJECT-RELATED
+------------------------
+
+class
+interface
+extends
+implements
+new
+this
+super
+
+
+ACCESS MODIFIERS
+----------------
+
+public
+private
+protected
+
+
+OTHER MODIFIERS
+---------------
+
+static
+final
+abstract
+native
+synchronized
+transient
+volatile
+strictfp
+
+
+CONTROL FLOW
+------------
+
+if
+else
+switch
+case
+default
+
+
+LOOPS
+-----
+
+for
+while
+do
+
+
+LOOP CONTROL
+------------
+
+break
+continue
+
+
+RETURN AND METHOD CONTROL
+-------------------------
+
+return
+
+
+EXCEPTION HANDLING
+------------------
+
+try
+catch
+finally
+throw
+throws
+
+
+TYPE-RELATED
+------------
+
+instanceof
+
+
+PRIMITIVE DATA TYPES
+--------------------
+
+byte
+short
+int
+long
+float
+double
+char
+boolean
+
+
+OTHER IMPORTANT KEYWORDS
+------------------------
+
+package
+import
+enum
+assert
+
+
+MODERN JAVA KEYWORDS / CONTEXTUAL KEYWORDS
+------------------------------------------
+
+record
+sealed
+non-sealed
+permits
+var
+yield
+
+
+NOTE:
+
+Some words such as var, record, sealed, non-sealed, permits
+and yield have contextual or specialized uses rather than
+behaving exactly like traditional Java keywords in every
+context.
+
+
+------------------------------------------------------------
+11. RESERVED LITERALS
+------------------------------------------------------------
+
+The following are also reserved and cannot be used as normal
+identifiers:
+
+        true
+        false
+        null
+
+true and false represent boolean values.
+
+null represents the absence of a reference to an object.
+
+
+------------------------------------------------------------
+12. COMMENTS
+------------------------------------------------------------
+
+Comments are notes written inside source code.
+
+They are ignored by the compiler.
+
+
+Single-line comment:
+
+        // This is a comment
+
+
+Multi-line comment:
+
+        /*
+           This is a multi-line comment.
+        */
+
+
+Documentation comment:
+
+        /**
+         * Documentation comment
+         */
+
+
+Documentation comments can be used by Javadoc to generate
+documentation.
+
+
+------------------------------------------------------------
+13. JAVA DATA TYPES
+------------------------------------------------------------
+
+Java data types are broadly divided into:
+
+        1. Primitive data types
+        2. Reference / non-primitive data types
+
+
+Primitive types are built into the Java language.
+
+There are 8 primitive data types:
+
+        byte
+        short
+        int
+        long
+        float
+        double
+        char
+        boolean
+
+
+Reference types include:
+
+        String
+        Arrays
+        Classes
+        Objects
+        Interfaces
+        Enums
+        Records
+
+
+------------------------------------------------------------
+14. VARIABLES
+------------------------------------------------------------
+
+A variable is a named storage location used to hold a value.
+
+General syntax:
+
+        dataType variableName = value;
+
+Example:
+
+        int age = 19;
+
+
+A variable's type determines what kind of value it can store.
+
+
+------------------------------------------------------------
+15. CONSTANTS
+------------------------------------------------------------
+
+A constant is a value that should not be reassigned after
+initialization.
+
+Java commonly uses the final keyword.
+
+Example:
+
+        final double PI = 3.14159;
+
+
+------------------------------------------------------------
+16. OPERATORS
+------------------------------------------------------------
+
+Operators perform operations on values.
+
+Important categories include:
+
+Arithmetic operators:
+
+        +
+        -
+        *
+        /
+        %
+
+
+Relational operators:
+
+        ==
+        !=
+        >
+        <
+        >=
+        <=
+
+
+Logical operators:
+
+        &&
+        ||
+        !
+
+
+Assignment operators:
+
+        =
+        +=
+        -=
+        *=
+        /=
+        %=
+
+
+Increment and decrement:
+
+        ++
+        --
+
+
+Conditional operator:
+
+        ?:
+
+
+------------------------------------------------------------
+17. CONTROL STATEMENTS
+------------------------------------------------------------
+
+Control statements determine the flow of program execution.
+
+Conditional statements:
+
+        if
+        if-else
+        else-if
+        switch
+
+
+Loop statements:
+
+        for
+        while
+        do-while
+
+
+Jump statements:
+
+        break
+        continue
+        return
+
+
+------------------------------------------------------------
+18. OBJECT-ORIENTED PROGRAMMING
+------------------------------------------------------------
+
+Java is primarily an object-oriented programming language.
+
+A class is a blueprint for creating objects.
+
+An object is an instance of a class.
+
+
+Four major principles of OOP:
+
+1. Encapsulation
+2. Inheritance
+3. Polymorphism
+4. Abstraction
+
+
+ENCAPSULATION
+-------------
+
+Combining data and methods in a class and controlling access
+to internal data.
+
+
+INHERITANCE
+-----------
+
+A class can inherit properties and behavior from another
+class.
+
+
+POLYMORPHISM
+------------
+
+The same interface or method concept can represent different
+forms of behavior.
+
+
+ABSTRACTION
+-----------
+
+Showing essential functionality while hiding implementation
+details.
+
+
+------------------------------------------------------------
+19. CLASSES
+------------------------------------------------------------
+
+A class defines the structure and behavior of objects.
+
+A class can contain:
+
+- Variables
+- Methods
+- Constructors
+- Nested classes
+- Blocks
+
+
+------------------------------------------------------------
+20. OBJECTS
+------------------------------------------------------------
+
+An object is created from a class.
+
+Objects can have:
+
+- State
+- Behavior
+- Identity
+
+
+Example concept:
+
+        Student student1;
+
+The object can be created using:
+
+        new Student();
+
+
+------------------------------------------------------------
+21. CONSTRUCTORS
+------------------------------------------------------------
+
+A constructor is a special member used when creating an
+object.
+
+It has the same name as its class and does not have a return
+type.
+
+
+------------------------------------------------------------
+22. METHODS
+------------------------------------------------------------
+
+A method is a block of code that performs a specific task.
+
+Methods can:
+
+- Accept parameters
+- Return values
+- Perform calculations
+- Modify object state
+- Call other methods
+
+
+------------------------------------------------------------
+23. METHOD OVERLOADING
+------------------------------------------------------------
+
+Method overloading allows multiple methods to have the same
+name but different parameter lists.
+
+
+------------------------------------------------------------
+24. METHOD OVERRIDING
+------------------------------------------------------------
+
+Method overriding occurs when a subclass provides its own
+implementation of a method inherited from a superclass.
+
+
+------------------------------------------------------------
+25. ACCESS MODIFIERS
+------------------------------------------------------------
+
+Java provides four main access levels:
+
+public
+private
+protected
+default
+
+
+public
+------
+Accessible from anywhere subject to normal Java access rules.
+
+
+private
+-------
+Accessible only inside the declaring class.
+
+
+protected
+---------
+Accessible within the same package and in subclasses under
+Java's access rules.
+
+
+default
+-------
+When no access modifier is specified, access is generally
+limited to the same package.
+
+
+------------------------------------------------------------
+26. EXCEPTION HANDLING
+------------------------------------------------------------
+
+Exception handling is used to handle abnormal situations
+during program execution.
+
+Important keywords:
+
+        try
+        catch
+        finally
+        throw
+        throws
+
+
+Example situations:
+
+- File not found
+- Invalid input
+- Division by zero
+- Database failure
+- Network failure
+
+
+------------------------------------------------------------
+27. COLLECTION FRAMEWORK
+------------------------------------------------------------
+
+Java provides the Collections Framework for storing and
+manipulating groups of objects.
+
+Important interfaces/classes include:
+
+        List
+        Set
+        Map
+        Queue
+
+Examples:
+
+        ArrayList
+        LinkedList
+        HashSet
+        TreeSet
+        HashMap
+        TreeMap
+        PriorityQueue
+
+
+------------------------------------------------------------
+28. GENERICS
+------------------------------------------------------------
+
+Generics allow classes and methods to work with specified
+types while providing compile-time type safety.
+
+Example concept:
+
+        ArrayList<String>
+
+
+This indicates that the list is intended to contain String
+objects.
+
+
+------------------------------------------------------------
+29. PACKAGES
+------------------------------------------------------------
+
+Packages are used to organize Java classes and interfaces.
+
+They help with:
+
+- Organization
+- Naming
+- Access control
+- Reusability
+
+
+Example:
+
+        package myproject;
+
+
+------------------------------------------------------------
+30. IMPORT
+------------------------------------------------------------
+
+The import statement allows classes and other types from
+packages to be used without writing their complete names.
+
+Example:
+
+        import java.util.Scanner;
+
+
+------------------------------------------------------------
+31. FILE HANDLING
+------------------------------------------------------------
+
+Java provides APIs for working with files.
+
+File handling can include:
+
+- Creating files
+- Reading files
+- Writing files
+- Updating files
+- Deleting files
+- Working with directories
+
+
+Common packages include:
+
+        java.io
+        java.nio
+
+
+------------------------------------------------------------
+32. DATABASE PROGRAMMING
+------------------------------------------------------------
+
+Java can communicate with databases.
+
+JDBC stands for:
+
+        Java Database Connectivity
+
+
+JDBC can be used for:
+
+- Connecting to databases
+- Executing SQL
+- Reading results
+- Inserting data
+- Updating data
+- Deleting data
+
+
+Databases commonly used with Java applications include:
+
+- MySQL
+- PostgreSQL
+- Oracle Database
+- Microsoft SQL Server
+
+
+------------------------------------------------------------
+33. NETWORK PROGRAMMING
+------------------------------------------------------------
+
+Java provides APIs for network programming.
+
+Examples include:
+
+- TCP communication
+- Socket programming
+- HTTP communication
+- Client-server applications
+- Network services
+
+
+------------------------------------------------------------
+34. MULTITHREADING
+------------------------------------------------------------
+
+Multithreading allows multiple threads to execute
+concurrently.
+
+It is useful for:
+
+- Server applications
+- Background processing
+- Network programs
+- Concurrent tasks
+- Performance-oriented applications
+
+
+------------------------------------------------------------
+35. GARBAGE COLLECTION
+------------------------------------------------------------
+
+Java automatically manages memory using garbage collection.
+
+When objects are no longer reachable, the JVM can eventually
+reclaim their memory.
+
+This means Java programmers generally do not manually free
+object memory like they commonly do in C using free().
+
+
+------------------------------------------------------------
+36. JAVA VIRTUAL MACHINE MEMORY
+------------------------------------------------------------
+
+Important JVM memory concepts include:
+
+Heap
+----
+Used primarily for objects and arrays.
+
+Stack
+-----
+Used for method execution, local variables and related
+execution information.
+
+Metaspace
+---------
+Used by the JVM for class metadata.
+
+
+------------------------------------------------------------
+37. JAVA API
+------------------------------------------------------------
+
+Java provides a large standard library called the Java API.
+
+Important packages include:
+
+        java.lang
+        java.util
+        java.io
+        java.nio
+        java.net
+        java.sql
+        java.time
+
+
+------------------------------------------------------------
+38. JAVA FRAMEWORKS
+------------------------------------------------------------
+
+Java has a large ecosystem of frameworks.
+
+Examples:
+
+        Spring
+        Spring Boot
+        Jakarta EE
+        Hibernate
+
+
+Spring Boot is commonly used for developing backend
+applications and REST APIs.
+
+
+------------------------------------------------------------
+39. JAVA AND WEB DEVELOPMENT
+------------------------------------------------------------
+
+Java can be used on the server side of web applications.
+
+A typical architecture can be:
+
+        User
+          |
+          v
+      Frontend
+          |
+          v
+       REST API
+          |
+          v
+     Java Backend
+          |
+          v
+       Database
+
+
+------------------------------------------------------------
+40. JAVA AND ANDROID
+------------------------------------------------------------
+
+Java has historically been a major language for Android
+development.
+
+Modern Android development heavily uses Kotlin, but Java
+remains important for existing Android applications and the
+Android ecosystem.
+
+
+------------------------------------------------------------
+41. REAL-WORLD USES OF JAVA
+------------------------------------------------------------
+
+Java is used in many areas, including:
+
+1. Banking systems
+2. Financial applications
+3. Enterprise applications
+4. Government systems
+5. Web backends
+6. REST APIs
+7. Android applications
+8. Desktop applications
+9. Cloud applications
+10. Network applications
+11. Database systems
+12. Large-scale business applications
+13. Automation tools
+14. Testing systems
+15. Distributed systems
+
+
+------------------------------------------------------------
+42. JAVA IN BANKING
+------------------------------------------------------------
+
+Java is commonly used in large financial systems because the
+ecosystem provides tools for:
+
+- Database connectivity
+- Transaction processing
+- Security
+- Networking
+- Large-scale backend development
+
+
+------------------------------------------------------------
+43. JAVA IN ENTERPRISE SYSTEMS
+------------------------------------------------------------
+
+Large organizations can use Java for systems such as:
+
+- Human Resource Management
+- Customer Management
+- Inventory Management
+- Accounting
+- Banking
+- Insurance
+- Government information systems
+
+
+------------------------------------------------------------
+44. JAVA IN IT
+------------------------------------------------------------
+
+Java knowledge can be useful for an IT professional when
+working with:
+
+- Enterprise applications
+- Backend services
+- Application servers
+- Database systems
+- APIs
+- Network applications
+- Monitoring tools
+- Automation software
+- Existing Java applications
+
+
+------------------------------------------------------------
+45. JAVA DEVELOPMENT TOOLS
+------------------------------------------------------------
+
+Common Java development environments include:
+
+- IntelliJ IDEA
+- Eclipse
+- NetBeans
+- Visual Studio Code
+
+
+Command-line tools are also available through the JDK.
+
+
+------------------------------------------------------------
+46. IMPORTANT JAVA COMMANDS
+------------------------------------------------------------
+
+Check Java version:
+
+        java -version
+
+
+Check Java compiler:
+
+        javac -version
+
+
+Compile a program:
+
+        javac Program.java
+
+
+Run a compiled program:
+
+        java Program
+
+
+------------------------------------------------------------
+47. JAVA FILE NAMING
+------------------------------------------------------------
+
+When a class is declared public, the filename normally needs
+to match the public class name.
+
+Example:
+
+        public class Student
+
+should normally be stored as:
+
+        Student.java
+
+
+------------------------------------------------------------
+48. JAVA NAMING CONVENTIONS
+------------------------------------------------------------
+
+Class names:
+
+        Student
+        BankAccount
+        EmployeeManager
+
+
+Method names:
+
+        calculateSalary()
+        getName()
+        displayResult()
+
+
+Variable names:
+
+        studentName
+        totalMarks
+        accountBalance
+
+
+Constants:
+
+        MAX_SIZE
+        PI
+
+
+Following naming conventions makes code easier to read and
+maintain.
+
+
+------------------------------------------------------------
+49. JAVA COMPILATION PROCESS
+------------------------------------------------------------
+
+The general process is:
+
+        Source Code
+        Program.java
+             |
+             v
+        Java Compiler
+            javac
+             |
+             v
+        Bytecode
+        Program.class
+             |
+             v
+            JVM
+             |
+             v
+        Program Output
+
+
+------------------------------------------------------------
+50. JAVA LEARNING PATH
+------------------------------------------------------------
+
+A useful learning order is:
+
+1. Introduction
+2. Variables
+3. Data Types
+4. Input and Output
+5. Operators
+6. Type Casting
+7. Conditional Statements
+8. Loops
+9. Arrays
+10. Strings
+11. Methods
+12. Classes and Objects
+13. Constructors
+14. Encapsulation
+15. Inheritance
+16. Polymorphism
+17. Abstraction
+18. Interfaces
+19. Exception Handling
+20. Collections
+21. Generics
+22. File Handling
+23. Packages
+24. Multithreading
+25. Database / JDBC
+26. Networking
+27. REST APIs
+28. Spring Boot
+29. Testing
+30. Real-world Projects
+
+
+============================================================
+                    END OF INTRODUCTION
+============================================================
+```
+
+### 2. `data_types.java`
+
+This one is **actual Java code**, covering all 8 primitive types and several reference/non-primitive types.
+
+```java
+/*
+ * ============================================================
+ *                    JAVA DATA TYPES
+ * ============================================================
+ *
+ * Java data types are mainly divided into two categories:
+ *
+ * 1. Primitive Data Types
+ * 2. Non-Primitive / Reference Data Types
+ *
+ *
+ * ============================================================
+ * PRIMITIVE DATA TYPES
+ * ============================================================
+ *
+ * Java has 8 primitive data types:
+ *
+ * 1. byte
+ * 2. short
+ * 3. int
+ * 4. long
+ * 5. float
+ * 6. double
+ * 7. char
+ * 8. boolean
+ *
+ *
+ * Primitive types store simple values directly.
+ *
+ *
+ * ============================================================
+ * 1. BYTE
+ * ============================================================
+ *
+ * Size: 8 bits
+ *
+ * Range:
+ * -128 to 127
+ *
+ * Used when small integer values are sufficient and memory
+ * efficiency matters.
+ *
+ * Real-world example:
+ * Sensor data or compact numeric data.
+ *
+ * ============================================================
+ */
+
+public class data_types {
+
+    public static void main(String[] args) {
+
+        // ----------------------------------------------------
+        // 1. BYTE
+        // ----------------------------------------------------
+
+        byte age = 19;
+
+        System.out.println("Byte value: " + age);
+
+
+        /*
+         * ----------------------------------------------------
+         * 2. SHORT
+         * ----------------------------------------------------
+         *
+         * Size: 16 bits
+         *
+         * Range:
+         * -32,768 to 32,767
+         *
+         * Used for integer values larger than byte but smaller
+         * than int.
+         */
+
+        short temperature = 25000;
+
+        System.out.println("Short value: " + temperature);
+
+
+        /*
+         * ----------------------------------------------------
+         * 3. INT
+         * ----------------------------------------------------
+         *
+         * Size: 32 bits
+         *
+         * Range:
+         * -2,147,483,648 to 2,147,483,647
+         *
+         * int is the most commonly used integer type in Java.
+         *
+         * Real-world examples:
+         * - Age
+         * - Marks
+         * - Quantity
+         * - Number of students
+         * - Product IDs
+         */
+
+        int students = 500;
+
+        System.out.println("Int value: " + students);
+
+
+        /*
+         * ----------------------------------------------------
+         * 4. LONG
+         * ----------------------------------------------------
+         *
+         * Size: 64 bits
+         *
+         * Used when int is not large enough.
+         *
+         * An L is normally added to a long literal.
+         */
+
+        long population = 3000000000L;
+
+        System.out.println("Long value: " + population);
+
+
+        /*
+         * ----------------------------------------------------
+         * 5. FLOAT
+         * ----------------------------------------------------
+         *
+         * Size: 32 bits
+         *
+         * Used for decimal numbers when single precision is
+         * sufficient.
+         *
+         * Java requires an f or F suffix for float literals.
+         */
+
+        float height = 5.5f;
+
+        System.out.println("Float value: " + height);
+
+
+        /*
+         * ----------------------------------------------------
+         * 6. DOUBLE
+         * ----------------------------------------------------
+         *
+         * Size: 64 bits
+         *
+         * double provides more precision than float.
+         *
+         * It is the usual choice for general-purpose
+         * floating-point calculations.
+         */
+
+        double salary = 55000.75;
+
+        System.out.println("Double value: " + salary);
+
+
+        /*
+         * ----------------------------------------------------
+         * 7. CHAR
+         * ----------------------------------------------------
+         *
+         * Size: 16 bits
+         *
+         * Stores a single UTF-16 code unit.
+         *
+         * A char is written using single quotes.
+         */
+
+        char grade = 'A';
+
+        System.out.println("Char value: " + grade);
+
+
+        /*
+         * ----------------------------------------------------
+         * 8. BOOLEAN
+         * ----------------------------------------------------
+         *
+         * Stores either:
+         *
+         * true
+         * false
+         *
+         * Used for logical conditions.
+         *
+         * Real-world examples:
+         * - Login successful?
+         * - Account active?
+         * - User is administrator?
+         * - Payment completed?
+         */
+
+        boolean isStudent = true;
+
+        System.out.println("Boolean value: " + isStudent);
+
+
+        /*
+         * ====================================================
+         *              NON-PRIMITIVE / REFERENCE TYPES
+         * ====================================================
+         *
+         * Reference types store references to objects rather
+         * than being one of Java's eight primitive types.
+         *
+         * Important reference types include:
+         *
+         * 1. String
+         * 2. Arrays
+         * 3. Classes
+         * 4. Objects
+         * 5. Interfaces
+         * 6. Enums
+         * 7. Records
+         */
+
+
+        /*
+         * ----------------------------------------------------
+         * 1. STRING
+         * ----------------------------------------------------
+         *
+         * String is a class used to represent text.
+         *
+         * Example:
+         */
+
+        String name = "Anmol Sapkota";
+
+        System.out.println("String value: " + name);
+
+
+        /*
+         * ----------------------------------------------------
+         * 2. ARRAY
+         * ----------------------------------------------------
+         *
+         * An array stores multiple values of the same type.
+         *
+         * Array indexing starts from 0.
+         */
+
+        int[] marks = {80, 75, 90, 85, 88};
+
+        System.out.println("First mark: " + marks[0]);
+
+        System.out.println("All marks:");
+
+        for (int mark : marks) {
+
+            System.out.println(mark);
+        }
+
+
+        /*
+         * ----------------------------------------------------
+         * 3. CLASS / OBJECT
+         * ----------------------------------------------------
+         *
+         * A class is a blueprint.
+         *
+         * An object is an instance of a class.
+         */
+
+        Student student = new Student();
+
+        student.name = "Anmol";
+        student.age = 19;
+
+        System.out.println("Student name: " + student.name);
+        System.out.println("Student age: " + student.age);
+
+
+        /*
+         * ----------------------------------------------------
+         * 4. ENUM
+         * ----------------------------------------------------
+         *
+         * An enum represents a fixed set of constants.
+         *
+         * Example:
+         *
+         * PENDING
+         * APPROVED
+         * REJECTED
+         */
+
+        Status status = Status.APPROVED;
+
+        System.out.println("Status: " + status);
+
+
+        /*
+         * ----------------------------------------------------
+         * 5. INTERFACE REFERENCE
+         * ----------------------------------------------------
+         *
+         * An interface defines a contract that classes can
+         * implement.
+         */
+
+        Payment payment = new OnlinePayment();
+
+        payment.pay();
+
+
+        /*
+         * ====================================================
+         *                  SUMMARY
+         * ====================================================
+         */
+
+        System.out.println("\n==============================");
+        System.out.println("Java Data Types");
+        System.out.println("==============================");
+
+        System.out.println("Primitive:");
+        System.out.println("byte");
+        System.out.println("short");
+        System.out.println("int");
+        System.out.println("long");
+        System.out.println("float");
+        System.out.println("double");
+        System.out.println("char");
+        System.out.println("boolean");
+
+        System.out.println("\nReference / Non-Primitive:");
+        System.out.println("String");
+        System.out.println("Array");
+        System.out.println("Class / Object");
+        System.out.println("Interface");
+        System.out.println("Enum");
+        System.out.println("Record");
+    }
+
+
+    /*
+     * ========================================================
+     * CLASS USED FOR OBJECT EXAMPLE
+     * ========================================================
+     */
+
+    static class Student {
+
+        String name;
+        int age;
+    }
+
+
+    /*
+     * ========================================================
+     * ENUM EXAMPLE
+     * ========================================================
+     */
+
+    enum Status {
+
+        PENDING,
+        APPROVED,
+        REJECTED
+    }
+
+
+    /*
+     * ========================================================
+     * INTERFACE EXAMPLE
+     * ========================================================
+     */
+
+    interface Payment {
+
+        void pay();
+    }
+
+
+    /*
+     * ========================================================
+     * CLASS IMPLEMENTING INTERFACE
+     * ========================================================
+     */
+
+    static class OnlinePayment implements Payment {
+
+        @Override
+        public void pay() {
+
+            System.out.println("Payment processed.");
+        }
+    }
+}
+
+
+/*
+ * ============================================================
+ *                    QUICK REFERENCE
+ * ============================================================
+ *
+ * Primitive:
+ *
+ * byte       -> small integer
+ * short      -> medium integer
+ * int        -> general integer
+ * long       -> large integer
+ * float      -> decimal, single precision
+ * double     -> decimal, double precision
+ * char       -> single UTF-16 code unit
+ * boolean    -> true / false
+ *
+ *
+ * Reference / Non-Primitive:
+ *
+ * String     -> text
+ * Array      -> collection of same-type elements
+ * Class      -> blueprint for objects
+ * Object     -> instance of a class
+ * Interface  -> contract/type
+ * Enum       -> fixed set of constants
+ * Record     -> concise data-carrier class
+ *
+ * ============================================================
+ */
