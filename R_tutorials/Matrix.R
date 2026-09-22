@@ -44,6 +44,13 @@ min(mat)     # Minimum value
 max(mat)     # Maximum value
 median(mat)  # Median value
 mean(mat)    # Mean value
+rowMeans(mat) #Mean value of rows
+colMeans(mat) #Mean of column
+
+#use of any and all
+any(mat < 3)
+all(mat < 4)
+
 
 
 # Singular and non-singular matrix
@@ -95,3 +102,21 @@ task[2, 2]   # Row 2, column 2
 task[2, 2] <- 45
 
 print(task)
+
+
+#accessing the diagonal
+sum(diag(mat))
+
+#binding the column and rows
+mat=rbind(mat,c(12,23))
+cbind(mat,c(22,34,0))
+
+#arthematics in matrix
+x <- matrix(c(1,2,3,4),nrow=2,ncol=2)
+y <- matrix(c(5,6,7,8),nrow=2,ncol=2)
+print(x%*%y)  # multiplication
+print(x+y)    #addition
+print(x-y)    #Difference
+
+
+
